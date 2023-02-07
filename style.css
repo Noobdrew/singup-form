@@ -23,6 +23,7 @@ body {
     padding: 15px;
     background-color: rgba(24, 38, 42, 0.35);
     width: auto;
+    height: auto;
 
 }
 
@@ -31,7 +32,7 @@ img {
     margin-right: 15px;
 }
 
-.login-screen {}
+
 
 .title {
     margin-top: 2px;
@@ -84,16 +85,48 @@ button {
     border-radius: 15px;
     padding: 10px;
 }
-button:hover{
-    background-color: #345e32 ;
+
+button:hover {
+    background-color: #345e32;
 }
 
-.legal{
+.legal {
     font-size: 11px;
 }
-a{
+
+a {
     color: #9FD146;
 }
-a:visited{
+
+a:visited {
     color: #457377;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    img{
+        margin: 3px;
+    }
+   .title{
+    width: 390px;
+    margin-bottom: 10px;
+   }
+   .form-container{
+    
+      margin: auto;
+    width: 350px;
+   }
+   .form-row{
+    display: flex;
+    flex-direction: column;
+   }
+   button{
+    width: 100%;
+   }
 }
