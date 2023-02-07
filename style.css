@@ -1,4 +1,5 @@
 body {
+    position: relative;
     font-family: Helvetica, Arial, sans-serif;
     color: #f0f7f8;
     display: flex;
@@ -102,31 +103,48 @@ a:visited {
     color: #457377;
 }
 
+.img-sourse {
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+}
+
 @media only screen and (max-width: 750px) {
 
-    .content{
+    .content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;
     }
-    img{
+
+    img {
         margin: 3px;
     }
-   .title{
-    width: 390px;
-    margin-bottom: 10px;
-   }
-   .form-container{
-    
-      margin: auto;
-    width: 350px;
-   }
-   .form-row{
-    display: flex;
-    flex-direction: column;
-   }
-   button{
-    width: 100%;
-   }
+
+    .title {
+        width: 390px;
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+
+        margin: auto;
+        width: 350px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+    .legal{
+       
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
 }
