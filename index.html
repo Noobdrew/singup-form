@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="logo-image">
+            <img src="tomb of knights.gif" alt="death knight with glowing sword" width="400px">
+        </div>
+        <div class="login-screen">
+            <p class="filler-text">Flavour text Flavour textFlavour textFlavour textFlavour textFlavour textFlavour text
+            </p>
+            <div class="form-container">
+                <form action="get">
+                    <div class="form-row">
+                        <label for="username">Username*</label>
+                        <input type="text" name="username" id="username" required
+                            pattern="^(?=.{4,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$"
+                            placeholder="Knight_zero">
+
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" required placeholder="jhonson@sam.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password*</label>
+                        <input type="password" name="password" id="password" required>
+
+                    </div>
+                    <div class="form-row">
+                        <label for="confirm-password">Confirm password*</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <div class="form-row">
+                        <small class="legal">
+                            By signing up, you are agreeing to our
+                            <a href="#">Terms & conditions</a>
+                            and
+                            <a href="#">Privacy Policy</a>
+                        </small>
+                    </div>
+                    <button type="submit">Create Account</button>
+                    <div class="login">
+                        <small class="login">Already have an account? <a href="">Log in</a></small>
+                        
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
