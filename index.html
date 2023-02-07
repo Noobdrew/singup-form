@@ -23,10 +23,9 @@
                         <label for="username">Username</label>
                         <input type="text" name="username" id="username" required
                             pattern="^(?=.{4,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$"
-                            placeholder="Knight_zero">
-
-                    </div>
-                    <div class="form-row">
+                            placeholder="Knight_zero" oninvalid="this.setCustomValidity('Name must be 4-20 charecters long')">
+                   </div>
+                    <div class=" form-row">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" required placeholder="Knight@magic.com">
                     </div>
@@ -56,7 +55,7 @@
             </div>
         </div>
     </div>
-   
+
 
 </body>
 
