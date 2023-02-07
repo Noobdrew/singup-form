@@ -15,7 +15,7 @@
             <img src="tomb of knights.gif" alt="death knight with glowing sword" width="400px">
         </div>
         <div class="login-screen">
-            <p class="filler-text">Flavour text Flavour textFlavour textFlavour textFlavour textFlavour textFlavour text
+            <p class="title">Sign up now to start your your adventure.
             </p>
             <div class="form-container">
                 <form action="get">
@@ -32,12 +32,17 @@
                     </div>
                     <div class="form-row">
                         <label for="password">Password*</label>
-                        <input type="password" name="password" id="password" required>
-
+                        <input type="password" name="password" id="password" required
+                            placeholder="At least 8 characters" pattern="(?=.{8,}).*$">
                     </div>
                     <div class="form-row">
                         <label for="confirm-password">Confirm password*</label>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <input type="password" name="confirm-password" id="confirm-password" required
+                            placeholder="Confirm Password" pattern="(?=.{8,}).*$">
+                    </div>
+                    <button type="submit">Create Account</button>
+                    <div class="login">
+                        <small class="login">Already have an account? <a href="">Log in</a></small>
                     </div>
                     <div class="form-row">
                         <small class="legal">
@@ -47,12 +52,6 @@
                             <a href="#">Privacy Policy</a>
                         </small>
                     </div>
-                    <button type="submit">Create Account</button>
-                    <div class="login">
-                        <small class="login">Already have an account? <a href="">Log in</a></small>
-                        
-                    </div>
-
                 </form>
             </div>
 
